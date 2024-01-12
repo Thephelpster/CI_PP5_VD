@@ -10,7 +10,7 @@ import itertools
 import random
 
 def page_vehicle_visualiser_body():
-    st.write('##Vehicle Visualiser')
+    st.write('### Vehicle Visualiser')
     st.info(
         '* The client is interested in having a study that visually '
         'differentiates a vehicle and non vehicle contained image.'
