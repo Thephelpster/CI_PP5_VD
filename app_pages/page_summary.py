@@ -15,8 +15,8 @@ def page_summary_body():
     )
 
     st.success(
-        "Vehicle Detector App has two business requirements:\n"
-        "1. The client would like to have a study of the dataset collected \n"
+        "Vehicle Detector App has two business requirements: \n\n"
+        "1. The client would like to have a study of the dataset collected \n\n"
         "2. The client would like to have an ML model developed in order "
         "to be able to indentify vehicles in images."
     )
