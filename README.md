@@ -1,120 +1,308 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Vehicle Detector
 
-## Codeanywhere Template Instructions
+![Vehicle Dectector Am I Responsive Image](./assets/readme/images/amiresponsive.png)
 
-Welcome,
+# Table of Contents
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the IDE Template Instructions section of this README.md file,  and modify the remaining paragraphs for your own project. Please do read the IDE Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use. 
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into <a href="https://app.codeanywhere.com/" target="_blank" rel="noreferrer">CodeAnywhere</a> with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and <code>pip3 install -r requirements.txt</code>
-
-1. In the terminal type <code>pip3 install jupyter</code>
-
-1. In the terminal type <code>jupyter notebook --NotebookApp.token='' --NotebookApp.password=''</code> to start the jupyter server.
-
-1. Open port 8888 preview or browser
-
-1. Open the jupyter_notebooks directory in the jupyter webpage that has opened and click on the notebook you want to open.
-
-1. Click the button Not Trusted and choose Trust.
-
-Note that the kernel says Python 3. It inherits from the workspace so it will be Python-3.8.12 as installed by our template. To confirm this you can use <code>! python --version</code> in a notebook code cell.
-
-## IDE Reminders
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In the IDE terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
+1. [Dataset Content](#dataset-content)
+2. [Business Requirements](#business-requirements)
+3. [Hypothesis and how to validate it?](#hypothesis-and-how-to-validate)
+4. [The rationale to map the business requirements to the Data Visualizations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ml-tasks)
+5. [ML Business Case](#ml-business-case)
+6. [ML Model Development](#ml-model-development)
+   1. [Version 1](#version-1)
+7. [Hypotheses - Considerations and Validations](#hypotheses---considerations-and-validations)
+8. [Dashboard Design](#dashboard-design)
+9.  [Unfixed Bugs](#unfixed-bugs)
+10. [Deployment](#deployment)
+11. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+12. [Other technologies used](#other-technologies-used)
+13. [Issues](#issues)
+14. [TESTING](#testing)
+    1.  [Manual Testing](#manual-testing)
+        1.  [User Story Testing](#user-story-testing)
+    2. [Validation](#validation)
+    3. [Automated Unit Tests](#automated-unit-tests)
+15. [Credits](#credits)
+    1.  [Content](#content)
+16. [Acknowledgements](#acknowledgements)
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size and to have a shorter model training time. If you are doing an image recognition project, we suggest you consider using an image shape that is 100px × 100px or 50px × 50px, to ensure the model meets the performance requirement but is smaller than 100Mb for a smoother push to GitHub. A reasonably sized image set is ~5000 images, but you can choose ~10000 lines for numeric or textual data. 
+The dataset is **Vehicle Detection Image Set** dataset from [Kaggle](https://www.kaggle.com/datasets/brsdincer/vehicle-detection-image-set). 
 
+Two labels:
+Non-Vehicles
+Vehicles
+
+This dataset is for machine learning process and computer vision steps and has 17760 images.
+
+[Back to top ⇧](#table-of-contents)
 
 ## Business Requirements
-* Describe your business requirements
 
+
+Key Stakeholders, therefore should be:
+
+
+Requirements:
+
+
+
+
+
+[Back to top ⇧](#table-of-contents)
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
 
+
+
+[Back to top ⇧](#table-of-contents)
 
 ## The rationale to map the business requirements to the Data Visualizations and ML tasks
-* List your business requirements and a rationale to map them to the Data Visualizations and ML tasks
 
+
+
+**Business Requirement 1: Data Visualization**
+
+
+**Business Requirement 2: Classification**
+
+
+[Back to top ⇧](#table-of-contents)
 
 ## ML Business Case
-* In the previous bullet, you potentially visualized an ML task to answer a business requirement. You should frame the business case using the method we covered in the course 
 
+
+
+[Back to top ⇧](#table-of-contents)
+
+
+## ML Model Development
+
+
+
+### Version 1
+
+
+Dense Layers:
+
+
+Compilation:
+
+
+<details>
+<summary>These are the results for the V1:</summary>
+
+![Accuracy Diagram V1](./outputs/v1/model_training_acc.png)
+![Losses Diagram V1](./outputs/v1/model_training_losses.png)
+![Confusion Matrix V1](./outputs/v1/confusion_matrix.png)
+
+</details>
+
+<br>
+
+[Back to top ⇧](#table-of-contents)
+
+## Hypotheses - Considerations and Validations
+
+
+
+1. **Visual Differentiation Hypothesis:** 
+
+2. **Deep Learning Classification Hypothesis:** 
+
+The validation process for these hypotheses involved:
+
+
+
+
+
+[Back to top ⇧](#table-of-contents)
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
 
 
+
+<details>
+<summary>Project Summary</summary>
+
+![Dashboard and Menu Image](./assets/readme_images/dashboard.png)
+</details>
+<br>
+
+
+<details>
+<summary>Vehicle Visualizer</summary>
+
+![Visualizer 01](./assets/readme_images/visualiser1.png)
+![Visualizer 02](./assets/readme_images/visualiser2.png)
+</details>
+
+
+<details>
+<summary>Montage</summary>
+
+![Visualizer 03](./assets/readme_images/visualiser3.png)
+![Visualizer 04](./assets/readme_images/visualiser4.png)
+</details>
+<br>
+
+
+<details>
+<summary>Model Performance</summary>
+
+![Model performance 01](./assets/readme_images/model-performance01.png)
+![Model performance 02](./assets/readme_images/model-performance02.png)
+</details>
+<br>
+
+
+<details>
+<summary>Vehicle Detection</summary>
+
+![Vehicle Detection 01](./assets/readme_images/detect01.png) 
+</details>
+<br>
+
+
+<details>
+<summary>Vehcile Detection Outputs</summary>
+
+![Vehicle Detection 02](./assets/readme_images/detect02.png)
+![Vehicle Detection 03](./assets/readme_images/detect03.png)
+</details>
+<br>
+
+- **Project Hypothesis**
+
+
+<details>
+<summary>Project Hypothesis</summary>
+
+![Hypothesis Page](./assets/readme_images/hypothesis.png)
+</details>
+<br>
+
+[Back to top ⇧](#table-of-contents)
 
 ## Unfixed Bugs
-* You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+There are no unfixed bugs.
 
 ## Deployment
 ### Heroku
 
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
+* The App live link is: [https://vehicle-detection-app-244022d2fd33.herokuapp.com/](https://vehicle-detection-app-244022d2fd33.herokuapp.com/)
 * Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 * The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
-2. At the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
+2. Log into Heroku CLI in IDE workspace terminal using the bash command: *heroku login -i* and enter user credentials
+3. Run the command *git init* to re-initialise the Git repository
+4. Run the command *heroku git:remote -a "YOUR_APP_NAME"* to connect the workspace and your previously created Heroku app.
+5. Set the app's stack to heroku-20 using the bash command: *heroku stack:set heroku-20* for compatibility with the Python 3.8.14 version used for this project
+6. Deploy the application to Heroku using the following bash command: *git push heroku main*
+7. The deployment process should happen smoothly if all deployment files are fully functional. On Heroku Dashboard click the button Open App on the top of the page to access your App.
+8. If the slug size is too large then add large files not required for the app to the .slugignore file.
 
+
+### Forking the GitHub Project
+To make a copy of the GitHub repository to use on your own account, one can fork the repository by doing as follows:
+
+* On the page for the [repository](https://github.com/Thephelpster/CI_PP5_VD), go to the 'Fork' button on the top right of the page, and click it to create a copy of the repository which should then be on your own GitHub account.
+
+### Making a Local Clone
+
+* On the page for the [repository](https://github.com/Thephelpster/CI_PP5_VD), click the 'Code' button
+* To clone the repository using HTTPS, copy the HTTPS URL provided there
+* Open your CLI application of choice and change the current working directory to the location where you want the cloned directory to be made.
+* Type git clone, and then paste the previously copied URL to create the clone
+
+[Back to top ⇧](#table-of-contents)
 
 ## Main Data Analysis and Machine Learning Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
 
+List of the libraries used in the project
+
+- [NumPy](https://numpy.org/)
+- [Pandas](https://pandas.pydata.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [Seaborn](https://seaborn.pydata.org/)
+- [Plotly](https://plotly.com/python/)
+- [TensorFlow](https://www.tensorflow.org/versions/r2.6/api_docs/python/tf)
+- [Keras Tuner](https://keras.io/keras_tuner/)
+- [Scikit-learn](https://scikit-learn.org/)
+- [PIL Image](https://pillow.readthedocs.io/en/stable/reference/Image.html)
+
+## Other technologies used
+- [Streamlit](https://streamlit.io/)
+- [Heroku](https://www.heroku.com/)
+- [Git/GitHub](https://github.com/)
+- [CodeAnywhere](https://www.codeanywhere.com/)
+- [VS Code](https://code.visualstudio.com/)
+- [Am I Responsive App](https://ui.dev/amiresponsive)
+
+[Back to top ⇧](#table-of-contents)
+
+### Issues
+
+
+
+
+[Back to top ⇧](#table-of-contents)
+
+## TESTING
+### Manual Testing
+
+#### User Story Testing
+*Business Requirement 1: Data Visualization**
+1.
+
+**Vehicle Visualizer Page**
+
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  |  |
+|  |  |  |  |
+
+
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  |  |
+
+
+**Vehicle Detection Page**
+
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  |  |
+
+
+
+| Feature | Action | Expected Result | Actual Result |
+| --- | --- | --- | --- |
+|  |  |  |  |
+
+[Back to top ⇧](#table-of-contents)
+
+### Validation
+
+
+### Automated Unit Tests
+- There were no automated unit testing. It is planned for the future development.
+
+[Back to top ⇧](#table-of-contents)
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+
 
 ### Content 
+With this project I followed the Code Institute Malaria Dectection Walkthrough and example.
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+## Acknowledgements
+* A big thank you to Mo Shami, my mentor, for all the guidance, help and advice.
 
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
-
-
-
-## Acknowledgements (optional)
-* Thank the people that provided support through this project.
-
+[Back to top ⇧](#table-of-contents)
