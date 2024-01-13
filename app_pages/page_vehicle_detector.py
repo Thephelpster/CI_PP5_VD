@@ -7,23 +7,24 @@ from src.data_management import download_dataframe_as_csv
 from src.machine_learning.predictive_analysis_clf import (
                                                     load_model_and_predict,
                                                     resize_input_image,
-                                                    plot_predictions_probabilities
+                                                    plot_predictions_probabilities # noqa
                                                     )
+
 
 def page_vehicle_detector_body():
     st.write('### Vehicle Detection')
 
     st.info(
-        '* The client would like to be able to differenciate between images with '
-        'vehicles and ones without.'
+        '* The client would like to be able to differenciate between images '
+        'with vehicles and ones without.'
         )
-    
+
     st.write(
-        'The training of the model was made from the vehicle dataset on Kaggle. '
-        'Test images would of been taken from this [Kaggle Dataset]'
-        '(https://www.kaggle.com/datasets/brsdincer/vehicle-detection-image-set).'
+        'The training of the model was made from the vehicle dataset on '
+        'Kaggle. Test images would of been taken from this [Kaggle Dataset]'
+        '(https://www.kaggle.com/datasets/brsdincer/vehicle-detection-image-set).' # noqa
         )
-    
+
     images_buffer = st.file_uploader(
         'Upload images. You may select more than one.',
         type=['png', 'jpg'], accept_multiple_files=True)

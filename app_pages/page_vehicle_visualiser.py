@@ -9,6 +9,7 @@ from matplotlib.image import imread
 import itertools
 import random
 
+
 def page_vehicle_visualiser_body():
     st.write('### Vehicle Visualiser')
     st.info(
@@ -33,7 +34,7 @@ def page_vehicle_visualiser_body():
                  caption='Image without vehicle - Average and Variability')
         st.image(avg_vehicle,
                  caption='Image with vehicle - Average and Variability')
-        
+
     if st.checkbox(
         'Differences between average vehicle image and non vehicle image'):
         diff_between_avgs = plt.imread(
@@ -45,7 +46,7 @@ def page_vehicle_visualiser_body():
             'not always the case.')
         st.image(diff_between_avgs,
                  caption='Difference between average images')
-        
+
     if st.checkbox('Image Montage'):
         st.write('* To Refresh the montage, click on the "Create '
                  'Montage" button.')
@@ -57,9 +58,10 @@ def page_vehicle_visualiser_body():
         image_montage(dir_path=my_data_dir + '/validation',
                       label_to_display=label_to_display,
                       nrows=8, ncols=3, figsize=(10, 25))
-        
+
+
 def image_montage(dir_path, label_to_display, ncols, nrows, figsize=(15, 10)):
-    
+
     sns.set_style('white')
     labels = os.listdir(dir_path)
 
@@ -73,9 +75,9 @@ def image_montage(dir_path, label_to_display, ncols, nrows, figsize=(15, 10)):
                 f'There are {len(images_list)} in your subset. '
                 f'You requested a montage with {nrows * ncols} spaces')
             return
-        
+
         list_rows = range(0, nrows)
-        list_cols = range(0,ncols)
+        list_cols = range(0, ncols)
         plot_idx = list(itertools.product(list_rows, list_cols))
 
         fig, axes = plt.subplots(nrows=nrows, ncols=ncols, figsize=figsize)

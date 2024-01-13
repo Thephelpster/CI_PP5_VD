@@ -35,3 +35,4 @@ def page_ml_performance_metrics():
     model_acc = plt.imread(f"outputs/{version}/confusion_matrix.png")
     st.image(model_acc, caption='Confusion Matrix')
     st.write("---")
+    
